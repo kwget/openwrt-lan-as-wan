@@ -7,7 +7,7 @@ I spend alot of time searching and finding solutions for my problems with OpenWR
 If you want to Route Traffic from another Router/Switch through your OpenWRT-Router, then assign a LAN Port of your router to act as WAN.
 In the picture below you can see how the Configuration on OpenWRT needs to look like.
 
-* With this method if you have a PPTP or OpenVPN on your OpenWRT all the Traffic from that VPN's Tunnel will work if you are connected as Client via LAN or WLAN because there are 2 possibilities. You change the Router to the Subnet of your ISP-Router and you are connected to that Route and VPN-Tunnels will have no effect if you are connected as a client on your OpenWRT. Or you do the Setup like this if you use VPN or Not this method will work perfectly like this.
+* This this Setup let's say If you have a PPTP or OpenVPN on your OpenWRT all the Traffic from that VPN's Tunnel will go through your OpenWRT if you are connected as Client via LAN or WLAN because there are 2 possibilities. You change the Router to the Subnet of your ISP-Router and you are connected to that Route and VPN-Tunnels will have no effect even if you are connected as a client on your OpenWRT. Or you do the Setup like this if you use VPN or Not this method will work perfectly like this.
 
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
 
@@ -40,6 +40,7 @@ Name: vpn
 Procotol: PPP (because after 20.1 PPtP is not shown but we will fix this via a command)
 ```
 * Then Click on "Create Interface".
+* After that Edit the fresh Created Interface and Assign Firewall Zone "WAN" so you dont have to play with the Rules more safe like this for beginners.
 
 Now let's make the Setup Perfect!
 
