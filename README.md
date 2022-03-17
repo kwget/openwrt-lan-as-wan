@@ -24,4 +24,25 @@ First of all connect your LAN cables to your Router and make the Internet first 
 After you are done with that go to "Network > Diagnostics" and check if it is working do a ping on google.com if that works everything fine.
 
 Now login to your OpenWRT box via SSH:
-ssh root@192.168.1.1
+* ssh root@192.168.1.1
+* opkg update
+* opkg install ppp-mod-pptp kmod-nf-nathelper-extra
+
+Now go LUCI Webinterface then to "Network > Interfaces"
+* Create new Interface click on "Add new interface" 
+* Name: vpn
+* Procotol: PPP (because after 20.1 PPtP is not shown but we will fix this via a command)
+* Then Click on "Create Interface"
+
+* Now back to your SSH and type in the following Commands:
+* uci set network.vpn=interface
+* uci set network.vpn.username='USERNAME'
+* uci set network.vpn.password='PASSWORD'
+* uci set network.vpn.ipv6='auto'
+* uci set network.vpn.proto='pptp'
+* uci set network.vpn.server='SERVER-IP'
+* uci commit
+* Then restart your network.
+* /etc/init.d/network restart
+* Connect back to your Network if you are via WLAN.
+* Done.
