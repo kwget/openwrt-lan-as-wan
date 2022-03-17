@@ -12,8 +12,8 @@ Under the Resources folder you will find nice tools for Flashing Routers
 1. TFTP Server App (an easy App to work with)
 2. Serial Tools App (to read from UART Serial Console) for that you will need some Hardware an USB to Serial/UART Adapter.
 3. PL2303 Drivers for macOS Big Sur / Monterey
-4. 
-5. Search and Buy an Adapter with the PL2303 Chip: "USB to Serial PL2303"
+
+4. Search and Buy an Adapter with the PL2303 Chip: "USB to Serial PL2303"
 Looks like this:
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/DEBO_USB_2_UART_01.jpeg?raw=true)
 
