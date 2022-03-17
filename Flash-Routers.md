@@ -17,7 +17,7 @@ Under the Resources folder you will find nice tools for Flashing Routers
 Looks like this:
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/DEBO_USB_2_UART_01.jpeg?raw=true)
 
-# How to Read the Serial/UART under macOS BigSur/Monterey.
+# How to Read the Serial/UART via USB under macOS BigSur/Monterey.
 * With this tools i Flashed Routers with OpenWRT-Images under macOS etc.
 
 1. Install PL2303 Drivers on your MAC, you can find them on my Resources folder.
