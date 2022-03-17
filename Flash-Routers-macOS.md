@@ -27,3 +27,5 @@ Looks like this:
 5. Connect!
 6. Power on your Router and you are Connected!
 
+# TFTP-Server under macOS
+1. Use the app on the Resources folder. It's so easy to Use if you need it on any Flashing Process.
