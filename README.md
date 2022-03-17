@@ -76,7 +76,8 @@ uci commit
 * Connect back to your Network if you are via WLAN.
 * Done.
 
-# I want to USE only VPN-Traffic if the Connection of the VPN is lost i dont want that my ISP's Connection is used on this router without a VPN.
+# I want to USE Strict only VPN-Traffic! 
+* if the Connection of the VPN is lost i dont want that my ISP's Connection is used on this router without a VPN.
 Very clear, if we lose the VPN Connection and we still want to stay Anonymous then we have to do this changes on the OpenWRT.
 1. Login to your OpenWRT-Routers Webinterace
 2. Go to: Network > Firewall
