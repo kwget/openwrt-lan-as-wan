@@ -75,3 +75,14 @@ uci commit
 ```
 * Connect back to your Network if you are via WLAN.
 * Done.
+
+# I want to USE only VPN-Traffic if the Connection of the VPN is lost i dont want that my ISP's Connection is used on this router without a VPN.
+Very clear, if we lose the VPN Connection and we still want to stay Anonymous then we have to do this changes on the OpenWRT.
+1. Login to your OpenWRT-Routers Webinterace
+2. Go to: Network > Firewall
+3. Edit your "lan" zone
+4. Remove "wan or any wans" from "Allow forward to destination zones:" let only your VPN and LAN to forward traffic all others not allowed.
+5. Done.
+
+This method will ensure that only if your PPTP/VPN/OpenVPN Tunnel is connected you can Surf the Internet if not there will not go a point of Information out to the Internet so we are safe to Surf and we can sleep better.
+* Local Connections are still allowed, so you can connect to your ISP-Routers local Admin Page and things but you are sure with this that your Real-IP not goes out if you use your OpenWRT as a TunnelBox.
