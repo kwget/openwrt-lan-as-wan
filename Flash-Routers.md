@@ -6,6 +6,8 @@ Here a bunch of tools used for Flashing Routers.
 2. Connect a LAN Cable to your Fritzbox and use fritzflash.py the parameters are easy just type in --help after.
 
 # macOS Tools for Flashing openWRT
+* If you want to Flash other Routers TP-Link, ASUS, D-Link..
+
 Under the Resources folder you will find nice tools for Flashing Routers
 1. TFTP Server App (an easy App to work with)
 2. Serial Tools App (to read from UART Serial Console) for that you will need some Hardware an USB to Serial/UART Adapter.
