@@ -17,7 +17,7 @@ OpenWRT-Router > ISP-Router > Internet
 My Setup: 
 * Will Route Traffic through your OpenWRT!
 ```
-ISP-Router > OpenWRT > Internet
+ISP-Router > OpenWRT-Router > Internet
 ```
 
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
