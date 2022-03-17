@@ -23,7 +23,7 @@ ISP-Router > OpenWRT-Router > Internet
 ```
 
 How to do it? 
-1. Login to LUCI on OpenWRT go to: "Network > Switch" Configure the VLAN's like on my Image.
+1. Login to LUCI on OpenWRT via the Webinterface go to: "Network > Switch" Configure the VLAN's like on my Image.
  
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
 
