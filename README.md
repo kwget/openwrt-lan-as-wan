@@ -35,14 +35,19 @@ Now go LUCI Webinterface then to "Network > Interfaces"
 * Then Click on "Create Interface"
 
 * Now back to your SSH and type in the following Commands:
-` uci set network.vpn=interface`
-* uci set network.vpn.username='USERNAME'
-* uci set network.vpn.password='PASSWORD'
-* uci set network.vpn.ipv6='auto'
-* uci set network.vpn.proto='pptp'
-* uci set network.vpn.server='SERVER-IP'
-* uci commit
+
+```
+uci set network.vpn=interface
+uci set network.vpn.username='USERNAME'
+uci set network.vpn.password='PASSWORD'
+uci set network.vpn.ipv6='auto'
+uci set network.vpn.proto='pptp'
+uci set network.vpn.server='SERVER-IP'
+uci commit
+```
 * Then restart your network.
-* /etc/init.d/network restart
+```
+/etc/init.d/network restart
+```
 * Connect back to your Network if you are via WLAN.
 * Done.
