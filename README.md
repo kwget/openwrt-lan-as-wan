@@ -26,17 +26,24 @@ After you are done with that go to "Network > Diagnostics" and check if it is wo
 Now login to your OpenWRT box via SSH:
 ```
 ssh root@192.168.1.1
+```
+Install the needed packages by typing the following commands:
+```
 opkg update
 opkg install ppp-mod-pptp kmod-nf-nathelper-extra
 ```
 
 Now go LUCI Webinterface then to "Network > Interfaces"
 * Create new Interface click on "Add new interface" 
-* Name: vpn
-* Procotol: PPP (because after 20.1 PPtP is not shown but we will fix this via a command)
-* Then Click on "Create Interface"
+```
+Name: vpn
+Procotol: PPP (because after 20.1 PPtP is not shown but we will fix this via a command)
+```
+* Then Click on "Create Interface".
 
-* Now back to your SSH and type in the following Commands:
+Now let's make the Setup Perfect!
+
+* Switch back to your SSH-Terminal and type in the following Commands:
 
 ```
 uci set network.vpn=interface
