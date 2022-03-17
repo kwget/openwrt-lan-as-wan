@@ -87,3 +87,7 @@ Very clear, if we lose the VPN Connection and we still want to stay Anonymous th
 
 This method will ensure that only if your PPTP/VPN/OpenVPN Tunnel is connected you can Surf the Internet if not there will not go a point of Information out to the Internet so we are safe to Surf and we can sleep better.
 * Local Connections are still allowed, so you can connect to your ISP-Routers local Admin Page and things but you are sure with this that your Real-IP not goes out if you use your OpenWRT as a TunnelBox.
+
+# Table of Hardware
+If you want to Check out if your Hardware is Supported for openWRT you can do that here:
+https://openwrt.org/toh/start
