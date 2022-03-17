@@ -24,9 +24,11 @@ First of all connect your LAN cables to your Router and make the Internet first 
 After you are done with that go to "Network > Diagnostics" and check if it is working do a ping on google.com if that works everything fine.
 
 Now login to your OpenWRT box via SSH:
-* ssh root@192.168.1.1
-* opkg update
-* opkg install ppp-mod-pptp kmod-nf-nathelper-extra
+```
+ssh root@192.168.1.1
+opkg update
+opkg install ppp-mod-pptp kmod-nf-nathelper-extra
+```
 
 Now go LUCI Webinterface then to "Network > Interfaces"
 * Create new Interface click on "Add new interface" 
