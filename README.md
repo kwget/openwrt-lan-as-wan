@@ -24,7 +24,10 @@ ISP-Router > OpenWRT-Router > Internet
 
 How to do it? 
 1. Login to LUCI on OpenWRT go to: "Network > Switch" Configure the VLAN's like on my Image.
-2. Go to "Network > Interfaces" Edit "WAN" and Change Device to "eth0.2" and Protocol to "DHCP Client"
+2. 
+![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
+
+3. Go to "Network > Interfaces" Edit "WAN" and Change Device to "eth0.2" and Protocol to "DHCP Client"
 * Now the Interface will get Internet through your ISP's Router but will Route Traffic when you are connected on your OpenWRT through your OpenWRT Route. So if your OpenWRT is connected to an PPTP or OpenVPN Tunnel all the Traffic will go through that Route OUT to the Rest of the World.
 
 * I have no Internet after this Setup? Easy just check Under your LAN or br-lan on "Network > Interfaces", Edit Settings go to Advanced Settings and add Custom DNS-Servers from Google or Cloudflare use 1.0.0.1 or 8.8.8.8 and it will work as long as your ISP's Router is connected to the Internet.
