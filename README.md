@@ -9,7 +9,7 @@ In the picture below you can see how the Configuration on OpenWRT needs to look 
 
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
 
-* With this Setup let's say If you have a PPTP or OpenVPN on your OpenWRT all the Traffic from that VPN's Tunnel will go through your OpenWRT if you are connected as Client via LAN or WLAN because there are 2 possibilities. You change the Router to the Subnet of your ISP-Router and you are connected to that Route and VPN-Tunnels will have no effect even if you are connected as a client on your OpenWRT. Or you do the Setup like this if you use VPN or Not this method will work perfectly like this.
+* With this Setup let's say If you have a PPTP or OpenVPN on your OpenWRT all the Traffic from that VPN's Tunnel will go through your OpenWRT if you are connected as Client via LAN or WLAN because there are 2 possibilities. You change the Router to the Subnet of your ISP-Router and you are connected to that Route and VPN-Tunnels will have no effect even if you are connected as a client on your OpenWRT. Or you do the Setup like this if you use VPN or Not this method will work perfectly like this, because your OpenWRT-Router will use it's own Route and not the Route from your ISP-Router.
 
 Standard-Setup: 
 * Your OpenWRT act's like a Client because you will have only Internet on that box if you connect your Router on the Same Subnet like your ISP-Router.
