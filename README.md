@@ -69,9 +69,8 @@ uci set network.vpn.proto='pptp'
 uci set network.vpn.server='SERVER-IP'
 uci commit
 
-cat << EOF >> /etc/sysctl.conf
+Add at the End of the Line at "/etc/sysctl.d/11-nf-conntrack.conf"
 net.netfilter.nf_conntrack_helper=1
-EOF
 
 /etc/init.d/sysctl restart
 
