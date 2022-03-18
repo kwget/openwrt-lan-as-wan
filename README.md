@@ -68,6 +68,13 @@ uci set network.vpn.ipv6='auto'
 uci set network.vpn.proto='pptp'
 uci set network.vpn.server='SERVER-IP'
 uci commit
+
+cat << EOF >> /etc/sysctl.conf
+net.netfilter.nf_conntrack_helper=1
+EOF
+
+/etc/init.d/sysctl restart
+
 ```
 * Then restart your network.
 ```
