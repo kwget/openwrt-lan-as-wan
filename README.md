@@ -8,6 +8,7 @@ If you want to Route Traffic from another Router/Switch through your OpenWRT-Rou
 In the picture below you can see how the Configuration on OpenWRT needs to look like.
 
 ![alt text](https://github.com/kwget/openwrt-tools/blob/main/resources/vlan.png?raw=true)
+LAN 4 is now our WAN-Port.
 
 * With this Setup let's say If you have a PPTP or OpenVPN on your OpenWRT all the Traffic from that VPN's Tunnel will go through your OpenWRT if you are connected as Client via LAN or WLAN because there are 2 possibilities. You change the Router to the Subnet of your ISP-Router and you are connected to that Route and VPN-Tunnels will have no effect even if you are connected as a client on your OpenWRT. Or you do the Setup like this if you use VPN or Not this method will work perfectly like this, because your OpenWRT-Router will use it's own Route and not the Route from your ISP-Router.
 
