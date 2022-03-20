@@ -1,5 +1,7 @@
 # macOS PFCTL Rules for Wireguard (Serverside)
 
+Install Wireguard on MacOS: https://apps.apple.com/us/app/wireguard/id1441195209
+
 Crete file if not exists
 ```
 nano /usr/local/etc/pf-nat.conf
