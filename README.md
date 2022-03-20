@@ -70,6 +70,7 @@ uci set network.vpn.server='SERVER-IP'
 uci commit
 
 echo 'net.netfilter.nf_conntrack_helper=1' >> /etc/sysctl.d/11-nf-conntrack.conf
+echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.d/11-nf-conntrack.conf
 
 /etc/init.d/sysctl restart
 
