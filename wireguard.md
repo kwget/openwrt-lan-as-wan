@@ -1,4 +1,4 @@
-# macOS PFCTL Rules for Wireguard
+# macOS PFCTL Rules for Wireguard (Serverside)
 
 Crete file if not exists
 ```
@@ -29,3 +29,16 @@ sudo pfctl -d
 sudo sysctl -w net.inet.ip.forwarding=1
 sudo pfctl -f /usr/local/etc/pf-nat.conf -e
 ```
+
+# Install WireGuard on OpenWRT (ClientSide)
+opkg update
+opkg install wireguard-tools kmod-wireguard luci-app-wireguard luci-i18n-wireguard-en luci-proto-wireguard  kmod-nf-nathelper-extra
+echo 'net.netfilter.nf_conntrack_helper=1' >> /etc/sysctl.d/11-nf-conntrack.conf
+echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.d/11-nf-conntrack.conf
+
+/etc/init.d/sysctl restart
+/etc/init.d/network restart
+
+# Generate Wireguard Ready to use Configs
+https://www.wireguardconfig.com/
+
