@@ -44,12 +44,10 @@ redsocks -c /tmp/ssh_tunnel/redsocks.conf -p /dev/null
 echo “starting IPtables rules”
 
  
-
 # create the REDSOCKS target
 iptables -t nat -N REDSOCKS
 
  
-
 # don’t route unroutable addresses
 iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
 iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
@@ -80,6 +78,5 @@ iptables -t nat -A PREROUTING -i br-lan -p tcp -j REDSOCKS
 #iptables -t nat -A PREROUTING -p tcp -j REDSOCKS
 
  
-
 # don’t forget to accept the tcp packets from eth0
-iptables -A INPUT -i br-lan -p tcp –dport 1338 -j ACCEPT
+iptables -A INPUT -i br-lan -p tcp --dport 1338 -j ACCEPT
